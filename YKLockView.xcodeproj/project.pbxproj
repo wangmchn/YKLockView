@@ -14,6 +14,9 @@
 		4D8AFED81AD0099A00DF2B29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8AFED71AD0099A00DF2B29 /* Images.xcassets */; };
 		4D8AFEDB1AD0099A00DF2B29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8AFED91AD0099A00DF2B29 /* LaunchScreen.xib */; };
 		4D8AFEE71AD0099A00DF2B29 /* YKLockViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8AFEE61AD0099A00DF2B29 /* YKLockViewTests.m */; };
+		4D8AFEF61AD009E600DF2B29 /* YKLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8AFEF51AD009E600DF2B29 /* YKLockView.m */; };
+		4D8AFEF91AD00A4000DF2B29 /* YKLockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8AFEF81AD00A4000DF2B29 /* YKLockButton.m */; };
+		4D8AFEFD1AD00A7000DF2B29 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8AFEFC1AD00A7000DF2B29 /* BackgroundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		4D8AFEE01AD0099A00DF2B29 /* YKLockViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YKLockViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8AFEE51AD0099A00DF2B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D8AFEE61AD0099A00DF2B29 /* YKLockViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKLockViewTests.m; sourceTree = "<group>"; };
+		4D8AFEF41AD009E600DF2B29 /* YKLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLockView.h; sourceTree = "<group>"; };
+		4D8AFEF51AD009E600DF2B29 /* YKLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKLockView.m; sourceTree = "<group>"; };
+		4D8AFEF71AD00A4000DF2B29 /* YKLockButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLockButton.h; sourceTree = "<group>"; };
+		4D8AFEF81AD00A4000DF2B29 /* YKLockButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKLockButton.m; sourceTree = "<group>"; };
+		4D8AFEFB1AD00A7000DF2B29 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		4D8AFEFC1AD00A7000DF2B29 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,8 @@
 		4D8AFEC91AD0099A00DF2B29 /* YKLockView */ = {
 			isa = PBXGroup;
 			children = (
+				4D8AFEFA1AD00A5100DF2B29 /* BGView */,
+				4D8AFEF01AD009A800DF2B29 /* YKLockView */,
 				4D8AFECE1AD0099A00DF2B29 /* AppDelegate.h */,
 				4D8AFECF1AD0099A00DF2B29 /* AppDelegate.m */,
 				4D8AFED11AD0099A00DF2B29 /* ViewController.h */,
@@ -117,6 +128,26 @@
 				4D8AFEE51AD0099A00DF2B29 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D8AFEF01AD009A800DF2B29 /* YKLockView */ = {
+			isa = PBXGroup;
+			children = (
+				4D8AFEF41AD009E600DF2B29 /* YKLockView.h */,
+				4D8AFEF51AD009E600DF2B29 /* YKLockView.m */,
+				4D8AFEF71AD00A4000DF2B29 /* YKLockButton.h */,
+				4D8AFEF81AD00A4000DF2B29 /* YKLockButton.m */,
+			);
+			name = YKLockView;
+			sourceTree = "<group>";
+		};
+		4D8AFEFA1AD00A5100DF2B29 /* BGView */ = {
+			isa = PBXGroup;
+			children = (
+				4D8AFEFB1AD00A7000DF2B29 /* BackgroundView.h */,
+				4D8AFEFC1AD00A7000DF2B29 /* BackgroundView.m */,
+			);
+			name = BGView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +252,10 @@
 			files = (
 				4D8AFED31AD0099A00DF2B29 /* ViewController.m in Sources */,
 				4D8AFED01AD0099A00DF2B29 /* AppDelegate.m in Sources */,
+				4D8AFEFD1AD00A7000DF2B29 /* BackgroundView.m in Sources */,
 				4D8AFECD1AD0099A00DF2B29 /* main.m in Sources */,
+				4D8AFEF91AD00A4000DF2B29 /* YKLockButton.m in Sources */,
+				4D8AFEF61AD009E600DF2B29 /* YKLockView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
