@@ -16,6 +16,7 @@
 @end
 @implementation YKLockView
 // init from code
+// frame为正方形时，按钮才是正圆
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self addLockButtons];

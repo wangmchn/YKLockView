@@ -11,6 +11,12 @@
 @class YKLockView;
 
 @protocol YKLockViewDelegate <NSObject>
+/**
+ *  代理方法，通过该方法传递解锁路径
+ *
+ *  @param lockView 解锁视图
+ *  @param path     解锁路径
+ */
 - (void)lockView:(YKLockView *)lockView withPath:(NSString *)path;
 @end
 
