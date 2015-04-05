@@ -19,4 +19,4 @@
 ## LockViewButton
 继承UIView，必要时可自行重绘。<br>
 当selected = YES，利用setNeedDisplay进行视图重绘，状态改变<br>
-(注意，并非时时重绘，只是在view上做一个重绘的标记，当下次屏幕刷新的时候，就会调用drawRect.)
+(注意，并非时时重绘，只是在view上做一个重绘的标记，当下次屏幕刷新的时候，才调用drawRect.)
