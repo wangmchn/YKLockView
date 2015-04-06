@@ -21,7 +21,7 @@
     BackgroundView *bgView = [[BackgroundView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:bgView];
     
-    YKLockView *lockView = [[YKLockView alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width,  self.view.frame.size.width)];
+    YKLockView *lockView = [[YKLockView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - self.view.frame.size.width, self.view.frame.size.width,  self.view.frame.size.width)];
     lockView.delegate = self;
     [self.view addSubview:lockView];
     
